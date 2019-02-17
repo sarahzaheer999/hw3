@@ -213,7 +213,23 @@ function draw() {
   rect(0, height-10, width, 10);
 }
 
+#  Daniel Shiffman Videos
+
+#  Answer the questions
+
+ A1)It holds data inside of it that is an x,y and diameter.Helps with behaviors and more things that act as the foundation for everything you do in java.
  
+A2)Range varies between 0-255
+Eg)background(0)
+ 
+A3)var x=random(1900,2019)
+ 
+ 
+
+
+
+
+
 
 
 
