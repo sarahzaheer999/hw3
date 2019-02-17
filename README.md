@@ -107,11 +107,14 @@ function draw() {
 #  Answer the questions
 
 A1)line(x, height-10, x+random(-10, 10), height-10-random(h));
+
 A2) if (random() > 0.999) {
     fill(255);
     rect(0, 0, width, height-15);
     h = 10;
+    
 A3)h helps in determining the height that keeps changing-making animations happen by making it a variable.
+
 A4)-10 ensures the existence,irregularity in height,height of the grass and how smoothly is grows bigger.
 
 #  speedy-lawnmower.js.
