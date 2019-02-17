@@ -102,3 +102,122 @@ function draw() {
   }
 }
 
+#  Lawn Simulator
+
+#  Answer the questions
+
+A1)line(x, height-10, x+random(-10, 10), height-10-random(h));
+A2) if (random() > 0.999) {
+    fill(255);
+    rect(0, 0, width, height-15);
+    h = 10;
+A3)h helps in determining the height that keeps changing-making animations happen by making it a variable.
+A4)-10 ensures the existence,irregularity in height,height of the grass and how smoothly is grows bigger.
+
+#  speedy-lawnmower.js.
+
+function setup() {
+  createCanvas(400, 200);
+  colorMode(HSB);
+}
+ 
+var x = 0;
+var h = 10;
+ 
+function draw() {
+  stroke(random(60, 70), 100, 90);
+  line(x, height-10, x+random(-10, 10), height-10-random(h));
+  noStroke();
+ 
+  x = x + 1;
+ 
+  if (x > width) {
+    x = random(10);
+    h = h + 3;
+  }
+ 
+  if (random() > 0.999) {
+    fill(255);
+    rect(0, 0, width, height-15);
+    h = 10;
+  }
+ 
+  fill(40, 100, 60);
+  rect(0, height-10, width, 10);
+}
+
+#  height-lawnmower.js
+
+function setup() {
+  createCanvas(400, 200);
+  colorMode(HSB);
+}
+ 
+var x = 0;
+var h = 10;
+ 
+function draw() {
+  stroke(random(60, 70), 100, 90);
+  line(x, height-10, x+random(-10, 10), height-10-random(h));
+  noStroke();
+ 
+  x = x + 10;
+ 
+  if (x > width) {
+    x = random(10);
+    h = h + 3;
+  }
+ 
+  if (h > 50) {
+    fill(255);
+    rect(0, 0, width, height-15);
+    h = 10;
+  }
+ 
+  fill(40, 100, 60);
+  rect(0, height-10, width, 10);
+}
+
+#  windy-lawnmower.js
+
+function setup() {
+  createCanvas(400, 200);
+  colorMode(HSB);
+}
+ 
+var x = 0;
+var h = 10;
+ 
+function draw() {
+  stroke(random(60, 70), 100, 90);
+  line(x-50, height-10, x+random(-10, 10), height-10-random(h));
+  noStroke();
+ 
+  x = x + 10;
+ 
+  if (x > width) {
+    x = random(10);
+    h = h + 3;
+  }
+ 
+  if (random() > 0.999) {
+    fill(255);
+    rect(0, 0, width, height-15);
+    h = 10;
+  }
+ 
+  fill(40, 100, 60);
+  rect(0, height-10, width, 10);
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
